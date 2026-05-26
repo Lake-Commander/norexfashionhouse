@@ -1,0 +1,10 @@
+.hood-sales-container {
+  background-image: url("");
+  width: 98%;
+  margin: 0 auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
