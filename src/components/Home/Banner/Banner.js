@@ -3,139 +3,143 @@ import React from "react";
 // banner image
 import clothings from "../../../assets/images/banner/banner2.webp";
 import fashion from "../../../assets/images/banner/banner1.webp";
-/*import accesories from "../../../assets/images/banner/banner3.webp"; */
-
+import accesories from "../../../assets/images/banner/banner3.webp";
 // swiper js code
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/bundle";
+
+// import required modules
 import { Navigation } from "swiper";
 
-// framer motion
-import { motion } from "framer-motion";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
+import Fade from 'react-reveal/Fade';
 
 const Banner = () => {
   return (
     <div className="h-[260px] w-full mb-10">
+      {/* hello */}
       <Swiper
         navigation={true}
         modules={[Navigation]}
         className="mySwiper h-[260px] mb-10"
       >
-        {/* SLIDE 1 */}
-        <SwiperSlide>
+        {" "}
+        {/* <SwiperSlide>
           <div
-            style={{ backgroundImage: `url(${fashion})`, backgroundSize: "100%" }}
-            className="bg-no-repeat bg-cover bg-center w-full h-full"
+            style={{ backgroundImage: `url(${accesories})`, backgroundSize: '100%' }}
+            className="bg-no-repeat h-full w-full bg-center"
           >
-            <div className="flex h-full">
-              <div className="w-1/2 hidden md:block"></div>
-
-              <div className="w-full md:w-1/2 md:bg-transparent bg-[#ffffff8e] flex items-center justify-center md:items-start h-full flex-col">
-
-                <motion.h1
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.5 }}
-                  className="text-md md:text-xl text-gray-700"
-                >
-                  New Collections
-                </motion.h1>
-
-                <motion.div
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.6 }}
-                  className="text-3xl md:text-2xl flex flex-row lg:flex-col gap-3 my-1 md:my-4 font-bold text-[#983441]"
-                >
-                  <p>Women's Fashion</p>
-                </motion.div>
-
-                <motion.p
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.7 }}
-                  className="text-gray-600 hidden md:block pr-5"
-                >
-                  Fashion has the ability to change and shape lives through its personal connection to us all.
-                </motion.p>
-
-                <motion.button
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.8 }}
-                  className="bg-[#983441] btn-sm hover:bg-primary transition-all duration-500 ease-in-out text-sm font-semibold mt-2 md:mt-5 text-white"
-                >
-                  Shop Now
-                </motion.button>
-
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        {/* SLIDE 2 */}
-        <SwiperSlide>
-          <div
-            style={{ backgroundImage: `url(${clothings})`, backgroundSize: "100%" }}
-            className="bg-no-repeat bg-center w-full h-full"
-          >
-            <div className="pl-0 md:pl-16 w-full md:w-1/2 bg-[#e0e2ebad] md:bg-transparent flex items-center md:items-start justify-center h-full flex-col">
-
-              <motion.h1
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.5 }}
+            <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad] flex items-center md:items-start justify-center h-full flex-col ">
+              <Fade top>
+              <h1
                 className="text-md md:text-xl text-gray-700"
               >
-                New Arrivals
-              </motion.h1>
-
-              <motion.h1
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6 }}
-                className="text-3xl md:text-2xl my-2 md:my-3 font-bold text-[#BC5525]"
+                Top Trending
+              </h1>
+              </Fade>
+              <h1
+                className="text-3xl md:text-2xl my-2 md:my-3 font-bold text-[#1B3C7A]"
               >
-                <span className="md:hidden">Latest Products</span>
-                <span className="hidden md:block">Accessories</span>
-              </motion.h1>
-
-              <motion.p
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.7 }}
+                <span className="md:hidden">Men's Clothes</span>
+                <span className="hidden md:block">Clothings</span>
+              </h1>
+              <p
                 className="text-gray-600 hidden md:block"
               >
-                Hey There! Checkout our new arrivals or latest products and try them out.
-              </motion.p>
-
-              <motion.button
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.8 }}
-                className="bg-[#F0E5D2] text-sm btn-sm hover:bg-primary transition-all duration-500 ease-in-out font-semibold md:mt-5 mt-2 text-black"
+                What you wear is how you present yourself to the world, especially today, when human contacts are so quick.{" "}
+              </p>
+              <button
+                className="bg-[#789bdf] btn-sm  hover:bg-primary transition-all duration-500 ease-in-out font-semibold text-sm md:mt-5 mt-2 text-black "
               >
                 Shop Now
-              </motion.button>
-
+              </button>
             </div>
-          </div>
+          </div>{" "}
+        </SwiperSlide> */}
+        <SwiperSlide>
+
+          <div
+            style={{ backgroundImage: `url(${fashion})`, backgroundSize: '100%' }}
+            className="bg-no-repeat bg-cover bg-center w-full   h-full"
+          >
+            <div className="flex h-full ">
+              <div className="w-1/2 hidden md:block"></div>
+              <div className="w-full md:w-1/2 md:bg-transparent bg-[#ffffff8e]  flex md:items-start items-center justify-center h-[100%] flex-col ">
+                <Fade top>
+                  <h1
+                    className="text-md md:text-xl text-gray-700 "
+                  >
+                    New Collections
+                  </h1>
+                </Fade>
+                <Fade top>
+                  <div className="text-3xl md:text-2xl flex flex-row lg:flex-col gap-3 my-1 md:my-4  font-bold text-[#983441]">
+                    <p>
+                      Women's{" "}
+                      Fashion</p>
+                  </div>
+                </Fade>
+                <Fade top>
+                  <p
+                    className="text-gray-600 hidden md:block pr-5"
+                  >
+                    Fashion has the ability to change and shape lives through its personal connection to us all.{" "}
+                  </p>
+                </Fade>
+                <Fade top>
+                  <button
+                    className="bg-[#983441] btn-sm hover:bg-primary transition-all duration-500 ease-in-out text-sm font-semibold mt-2 md:mt-5 text-white"
+                  >
+                    Shop Now
+                  </button>
+                </Fade>
+              </div>
+            </div>
+          </div>{" "}
+
         </SwiperSlide>
+        <SwiperSlide>
+  <div
+    style={{ backgroundImage: `url(${clothings})`, backgroundSize: "100%" }}
+    className="bg-no-repeat bg-center bg-origin-padding w-full h-full"
+  >
+    <div className="pl-0 md:pl-16 w-full md:w-1/2 md:bg-transparent bg-[#e0e2ebad] flex items-center md:items-start justify-center h-full flex-col">
+      
+      <Fade top>
+        <h1 className="text-md md:text-xl text-gray-700">
+          New Arrivals
+        </h1>
+      </Fade>
+
+      <Fade top>
+        <h1 className="text-3xl md:text-2xl my-2 md:my-3 font-bold text-[#BC5525]">
+          <span className="md:hidden">Latest Products</span>
+          <span className="hidden md:block">Accessories</span>
+        </h1>
+      </Fade>
+
+      <Fade top>
+        <p className="text-gray-600 hidden md:block">
+          Hey There! Checkout our new arrivals or latest products and try them out.
+        </p>
+      </Fade>
+
+      <Fade top>
+        <button
+          className="bg-[#F0E5D2] text-sm btn-sm hover:bg-primary transition-all duration-500 ease-in-out font-semibold md:mt-5 mt-2 text-black"
+        >
+          Shop Now
+        </button>
+      </Fade>
+
+    </div>
+  </div>
+</SwiperSlide>
+ 
 
       </Swiper>
     </div>
