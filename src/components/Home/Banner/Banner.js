@@ -16,7 +16,7 @@ import "swiper/css/bundle";
 // import required modules
 import { Navigation } from "swiper";
 
-import Fade from 'react-reveal/Fade';
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
