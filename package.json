@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "daisyui": "^2.15.4",
     "firebase": "^9.8.3",
+    "framer-motion": "^12.40.0",
     "lax.js": "^2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
