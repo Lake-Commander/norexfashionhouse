@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cloth = () => {
   const navigate = useNavigate()
-  const [over, setOver] = useState(false);
+  /*const [over, setOver] = useState(false);*/
   const handleNavigate = (id) => {
     navigate(`/clothDetails/${id}`)
   };

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "../../../styles/components/swiperSlider.css";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, /*Navigation,*/ Pagination } from "swiper";
 import { BestSellerData } from "../../../StaticData/ProductData";
 
 const BestSellers = () => {
